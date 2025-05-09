@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIComDev | Технологии, формирующие завтра</title>
+  <meta name="description" content="AIComDev — разработка мобильных приложений, сайтов и программного обеспечения с использованием AI.">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      color: #FFFFFF;
+      background: linear-gradient(135deg, #1A0033, #0A1A2F);
+      overflow-x: hidden;
+    }
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      background: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b') center/cover no-repeat;
+      position: relative;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(10, 26, 47, 0.8);
+    }
+    .hero h1 {
+      font-size: 48px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-shadow: 0 0 20px #39FF14, 0 0 40px #D600F0;
+      animation: neonGlow 2s infinite alternate;
+      position: relative;
+      z-index: 1;
+    }
+    .hero p {
+      font-size: 20px;
+      margin: 20px 0;
+      color: #E0E0E0;
+      position: relative;
+      z-index: 1;
+    }
+    .btn {
+      background: transparent;
+      border: 2px solid #39FF14;
+      padding: 12px 24px;
+      border-radius: 5px;
+      text-decoration: none;
+      color: #39FF14;
+      font-weight: bold;
+      font-size: 18px;
+      transition: all 0.3s;
+      box-shadow: 0 0 10px #39FF14;
+      position: relative;
+      z-index: 1;
+    }
+    .btn:hover {
+      background: #39FF14;
+      color: #0A1A2F;
+      box-shadow: 0 0 20px #39FF14;
+    }
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+      background: #0A1A2F;
+    }
+    .section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #39FF14;
+      text-shadow: 0 0 10px #39FF14;
+    }
+    .section p {
+      font-size: 16px;
+      color: #E0E0E0;
+      margin-bottom: 20px;
+    }
+    .social {
+      margin-top: 20px;
+    }
+    .social a {
+      color: #39FF14;
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+    .social a:hover {
+      color: #D600F0;
+      text-shadow: 0 0 10px #D600F0;
+    }
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 32px;
+      }
+      .hero p {
+        font-size: 16px;
+      }
+      .btn {
+        padding: 10px 20px;
+        font-size: 16px;
+      }
+      .section h2 {
+        font-size: 24px;
+      }
+      .section p {
+        font-size: 14px;
+      }
+    }
+    @keyframes neonGlow {
+      from {
+        text-shadow: 0 0 10px #39FF14, 0 0 20px #39FF14, 0 0 30px #D600F0;
+      }
+      to {
+        text-shadow: 0 0 20px #39FF14, 0 0 40px #39FF14, 0 0 60px #D600F0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero" id="home">
+    <h1>AIComDev</h1>
+    <p>Технологии, формирующие завтра</p>
+    <a href="#contact" class="btn">Начать проект</a>
+  </div>
+  <div class="section" id="about">
+    <h2>Кто мы?</h2>
+    <p>AIComDev — команда специалистов, которая помогает трансформировать ваши идеи в эффективные цифровые решения. Мы оптимизируем бизнес-процессы и увеличиваем прибыль.</p>
+  </div>
+  <div class="section" id="contact">
+    <h2>Свяжитесь с нами</h2>
+    <p>📲 +7 777 845 8 845</p>
+    <div class="social">
+      <a href="https://x.com/AIComDev" target="_blank">X</a>
+      <a href="https://t.me/AIComDev" target="_blank">Telegram</a>
+      <a href="https://x.com/intent/tweet?text=Запустил%20сайт%20для%20AIComDev!%20Технологии,%20формирующие%20завтра!%20🚀%20@AIComDev" target="_blank">Поделиться в X</a>
+    </div>
+  </div>
+</body>
+</html>
